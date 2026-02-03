@@ -1,5 +1,5 @@
 {% set name = "ansys-api-discovery" %}
-{% set version = "1.0.23" %}
+{% set version = "1.0.24" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ansys_api_discovery-{{ version }}.tar.gz
-  sha256: 570276ce9c44718ba2e2d11a56672c5c4c0d907316cd8be0274d12eda2b638fc
+  sha256: ef97afcab79ea268d0165cb76c52e28f5e4ed53fb0f2bcc649c06de494a19ab9
 
 build:
   noarch: python
