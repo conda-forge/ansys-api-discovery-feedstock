@@ -1,5 +1,5 @@
 {% set name = "ansys-api-discovery" %}
-{% set version = "1.0.27" %}
+{% set version = "1.0.28" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ansys_api_discovery-{{ version }}.tar.gz
-  sha256: 3ea5a94ce101688c7dd50207887a645c8054a28d3a81cb15b27eeac47cee19df
+  sha256: a675241a90347db5ec5c84e4859ec83d2efdf18ce89f76fb5d9e39b52814789c
 
 build:
   noarch: python
@@ -17,16 +17,16 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=42.0.0, <82.0
+    - setuptools >=42.0.0
     - wheel
-    - ansys_tools_protoc_helper >=0.4.0
-    - ansys-api-geometry ==0.4.91
+    - ansys_tools_protoc_helper >=0.6.0
+    - ansys-api-geometry ==0.4.92
     - pip
   run:
     - python >={{ python_min }}
     - grpcio >=1.44,<2.dev0
-    - protobuf <7,>=3.19
-    - ansys-api-geometry ==0.4.91
+    - protobuf >=3.19
+    - ansys-api-geometry ==0.4.92
 
 test:
   imports:
