@@ -25,7 +25,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - grpcio >=1.44,<2.dev0
-    - protobuf >=3.19
+    - protobuf >=5.29
     - ansys-api-geometry ==0.4.92
 
 test:
